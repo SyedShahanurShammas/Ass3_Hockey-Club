@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind and deisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- Font Awsome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Hocky-Club</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'primary-color': '#FF4240',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .fonts-manrope {
+            font-family: "Manrope", serif;
+        }
+    </style>
+
+</head>
+
+<body class="fonts-manrope">
+    <header class="container mx-auto px-4 lg:px-8">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Content</a></li>
+
+                    </div>
+                    <h1 class="text-3xl font-extrabold">Hockey<span class="text-red-600">’</span>s</h1>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal font-normal text-[16px] px-1">
+                        <li class="text-red-600"><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Content</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <i class="fa-solid fa-magnifying-glass mr-6 text w-[24px]  text-[#13131833]"></i>
+                    <a
+                        class="btn text-white bg-primary-color border-2  hover:bg-transparent hover:text-blue-500 font-bold px-6 ">Get
+                        Ticket</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container mx-auto px-4 lg:px-8">
+        <!-- Banner section -->
+        <section class="relative">
+            <div class="carousel w-full lg:h-[555px] rounded-md">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full" alt="">
+                    <div class="absolute left-1/3 lg:left-6 bottom-3 space-x-4  flex  lg:bottom-8 transform">
+                        <a href="#slide4" class="btn btn-circle  bg-black text-white">❮</a>
+                        <a href="#slide2" class="btn btn-circle  bg-black text-white">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="Images/2.png" class="w-full" />
+                    <div class="absolute left-1/3 lg:left-6 bottom-3 space-x-4  flex  lg:bottom-8 transform">
+                        <a href="#slide1" class="btn btn-circle  bg-black text-white">❮</a>
+                        <a href="#slide3" class="btn btn-circle  bg-black text-white">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="Images/3.png" class="w-full" />
+                    <div class="absolute left-1/3 lg:left-6 bottom-3 space-x-4  flex  lg:bottom-8 transform">
+                        <a href="#slide2" class="btn btn-circle  bg-black text-white">❮</a>
+                        <a href="#slide4" class="btn btn-circle  bg-black text-white">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="Images/4.png" class="w-full" />
+                    <div class="absolute left-1/3 lg:left-6 bottom-3 space-x-4  flex  lg:bottom-8 transform">
+                        <a href="#slide3" class="btn btn-circle  bg-black text-white">❮</a>
+                        <a href="#slide1" class="btn btn-circle  bg-black text-white">❯</a>
+                    </div>
+                </div>
+            </div>
+            <div
+                class=" lg:absolute lg:w-[566px] right-12 bottom-16 p-8 space-y-4 text-white bg-[#131318FF] rounded-xl">
+                <h1 class="text-xl font-extrabold">Meet all the heroes from the field</h1>
+                <p class="text-xs font-medium text-[#FFFFFF99]">Dit amet consectetur. Condimentum dignissim adipiscing
+                    aliquam turpis
+                    placerat dolor. Purus urna in
+                    sit nullam proin. </p>
+            </div>
+        </section>
+        <!-- common section -->
+        <section class="text-center mt-32 flex flex-col items-center">
+            <h1 class="text-3xl font-extrabold text-[#131318]">Professional Hockeys Club</h1>
+            <p class="lg:w-[606px] text-[#13131899] text-xs font-medium mt-6 ">Dit amet consectetur. Condimentum
+                dignissim
+                adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+        </section>
+        <!-- progress section -->
+        <section class="mt-8 gap-6 grid grid-cols-1 items-center justify-items-center lg:grid-cols-4 md:grid-cols-3">
+            <div class="flex  flex-col w-[250px] items-center space-y-4">
+                <div class="radial-progress text-[#FF4240]" style="--value:86; --size:8rem;" role="progressbar">
+                    <span class="font-extrabold text-[28px] text-black">86%</span>
+                </div>
+                <h2 class="text-[20px] font-semibold">Prayer Facility</h2>
+                <p class="text-xs text-center font-normal text-[#13131899]">Amet consectetur. Condimentum dignissim
+                    adipiscing .</p>
+
+            </div>
+            <div class="flex flex-col w-[250px] items-center space-y-4 justify-center">
+                <div class="radial-progress text-[#49D293]" style="--value:90; --size:8rem;" role="progressbar">
+                    <span class="font-extrabold text-[28px] text-black">90%</span>
+                </div>
+                <h2 class="text-[20px] font-semibold">Prayer Facility</h2>
+                <p class="text-xs text-center font-normal text-[#13131899]">Amet consectetur. Condimentum dignissim
+                    adipiscing .</p>
+
+            </div>
+            <div class="flex flex-col w-[250px] items-center space-y-4 justify-center">
+                <div class="radial-progress text-[#FFB546]" style="--value:95; --size:8rem;" role="progressbar">
+                    <span class="font-extrabold text-[28px] text-black">95%</span>
+                </div>
+                <h2 class="text-[20px] font-semibold">Prayer Facility</h2>
+                <p class="text-xs text-center font-normal text-[#13131899]">Amet consectetur. Condimentum dignissim
+                    adipiscing .</p>
+
+            </div>
+            <div class="flex flex-col w-[250px] items-center space-y-4 justify-center">
+                <div class="radial-progress text-[#42A5F5]" style="--value:80; --size:8rem;" role="progressbar">
+                    <span class="font-extrabold text-[28px] text-black">80%</span>
+                </div>
+                <h2 class="text-[20px] font-semibold">Prayer Facility</h2>
+                <p class="text-xs text-center font-normal text-[#13131899]">Amet consectetur. Condimentum dignissim
+                    adipiscing .</p>
+
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
